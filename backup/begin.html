@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Carvalho - Begin</title>
+    <link rel="stylesheet" href="styleB.css">
+    <link rel="shortcut icon" href="images/rc-logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div  id="name-log">
+            <span class="nome">RAPHAEL</span>
+            <span class="sobrenome">CARVALHO</span>
+        </div>
+        <div>
+            <a href="index.html">Projecs</a>
+            <a href="#">About me</a>
+            <a href="begin.html">Begin</a>
+            <div class="language-switcher">
+                <div class="language-label">
+                    <span class="en-label">EN</span>
+                    <button class="toggle-btn" id="toggle-btn">
+                    <div class="toggle-handle"></div>
+                    </button>
+                    <span class="br-label">BR</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex-row">
+        <div class="metade-pagina">
+            <div><p id="bigText">Let's work togheter!</p></div>
+            <div class="submit">Submit</div>
+        </div>
+        <div class="metade-pagina">
+            <!-- aqui será criado um formulario. Ver qual a semantica correta, os componentes criados abaixo são criados em divs mas para substituir os componentes futuros. (ver como criar um input e tirar os estilos feios do input padrão)
+            
+            o texto deve apare-->
+            <div class="inputTest"><p>Nome</p></div>
+            <div class="inputTest espaco1"><p>Email Address</p></div>
+            <div class="inputTest"><p>Company</p></div>
+            <div class="inputTest espaco1 last"><p>Give me more details about your project</p></div>
+        </div>
+    </div>
+    <!-- testar como ficam as estruturas de input diminuidas a ponto do submit caber dentro da pagina pra não ficar o espaço vazio abaixo do lets work together -->
+
+    <footer class="flex-row">
+        <div id="name-log">
+            <span class="nome">RAPHAEL</span>
+            <span class="sobrenome">CARVALHO</span>
+            <div class="lineDown"></div>
+        </div>
+        <ul class="flex-row">
+            <div id="email">rafaolive3003@gmail.com</div>
+            <li><a target="_blank" href="https://www.linkedin.com/in/raphael-de-oliveira-carvalho-a6b133253/"><img class="linkSocial" src="images/logos-redes-sociais/linkedin-sf.png" alt="link do linkedin"></a></li>
+            <li><a target="_blank" href="https://wa.me/5547984470822"><img class="linkSocial" src="images/logos-redes-sociais/whatsapp-sf.png" alt=""></a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        const toggleButton = document.getElementById('toggle-btn');
+
+        toggleButton.addEventListener('click', () => {
+        toggleButton.classList.toggle('checked');
+        });
+
+        function copyText() {
+            const textToCopy = "rafaolive3003@gmail.com";
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Copied!");
+            });
+        }
+    </script>
+</body>
+</html>
