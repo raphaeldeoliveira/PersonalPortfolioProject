@@ -1,23 +1,7 @@
-* Implementar slide show das imagens dos 4 projetos
+* Fazer a pagina do FIFA
 
-* Criar uma pagina pra cada um dos projetos
-
-* colocar a tradução do botão em todo o projeto
-
-* trocar o email e colocar uma logo de email. (mantem o que ao clicar copia e aparece 'copiado!'
-
-* fazer o begin ser como um formulario e ao enviar eu receba um email ou algo do tipo. Descobrir como funciona e fazer
+* criar o formulario do begin e deixar usavel
 
 * personalizar github e linkedin
 
-* deixar os cards do to-do list como os card do jogo monopoly + aplicar media query
-
 * criar media querys
-
-* perguntar pro wilson se posso colocar o site como um dos projetos
-
-* criar os arquivos style e js separados
-
-* deixar o codigo limpo
-
-* subir o codigo no github
