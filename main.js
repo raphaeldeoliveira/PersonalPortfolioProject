@@ -71,6 +71,7 @@ toggleBtn.addEventListener("click", function () {
   const textProject3 = document.getElementById("textProject3");
   const project4 = document.getElementById("project4");
   const textProject4 = document.getElementById("textProject4");
+  const msgEmail = document.getElementById("texto-copia-email");
   const vazio = document.getElementById("vazio");
 
   if (toggleBtn.classList.contains("checked")) {
@@ -82,13 +83,14 @@ toggleBtn.addEventListener("click", function () {
     presentationTextAfter.textContent = "Mas estudando para me tornar um grande programador. Sou muito interessado em tecnologia e procuro aprimorar minhas habilidades todo dia";
     textPhoto.textContent = "Esse sou eu!";
     project1.textContent = "Projeto do Bot do FIFA";
-    textProject1.textContent = "Este projeto fiz com um amigo 'onde' desenvolvemos um sistema para ganhar moedas no jogo FIFA para PS4. Este projeto 'durou' 'cerca de' 7 meses. Criamos um script para fazer uma sequência repetível e quando há uma 'quebra' no fluxo o programa tem API's que 'interferiram' no fluxo e 'corrigiram as quebras'. Foi feito em python e usando a plataforma X criamos o flow script. Tinha uma GUI...";
+    textProject1.textContent = "Este projeto fiz com um amigo 'onde' desenvolvemos um sistema para ganhar moedas no jogo FIFA para PS4. Este projeto 'durou' 'cerca de' 7 meses. Criamos um script para fazer uma sequência repetível e quando há uma 'quebra' no fluxo o programa tem API's que 'interferiram' no fluxo e 'corrigiram as quebras'.";
     project2.textContent = "Plataforma de ensino de programação";
     textProject2.textContent = "Esse é um projeto de extensão da universidade que eu fui um desenvolvedor front-end. Construi todos os componentes css e as interatividades com o vue.";
     project3.textContent = "Alfa Tour"
     textProject3.textContent = "Este é o meu primeiro projeto se eu fizer na primeira fase do curso. É uma 'Plataforma' para incentivar o turismo em Lages. Neste projeto eu realmente aprendo como usar html e css."
     project4.textContent = "Lista de tarefas"
     textProject4.textContent = "Um projeto clássico de um desenvolvedor... Eu tenho um pouco de vergonha disso, mas eu os uso diariamente para organizar minha rotina e é meu primeiro projeto, então.."
+    msgEmail.textContent = "Copiado!"
 
     vazio.textContent = "vazio";
 
@@ -108,6 +110,7 @@ toggleBtn.addEventListener("click", function () {
     textProject3.textContent = "This is my first projetct if i make in first phase of the course. Its a 'Plataforma' para incentivar o turismo em Lages. In this project i really learn how use html and css."
     project4.textContent = "To-do List"
     textProject4.textContent = "A classic project of an developer... I have some shame of this, but i use them daily for organize my routine and its my first projecot, so.."
+    msgEmail.textContent = "Copied!"
 
     vazio.textContent = "oizav";
 
