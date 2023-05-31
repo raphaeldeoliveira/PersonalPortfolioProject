@@ -153,3 +153,39 @@ slideshows.forEach(slideshow => {
     images[currentImageIndex].classList.add('active');
   });
 });
+
+// PEGA O CLICK DO BOTAO 'VIEW FULL CV / Ver curriculo'
+const metadeDireita1 = document.getElementById('metadeDireita1');
+const metadeDireita2 = document.getElementById('metadeDireita2');
+
+metadeDireita1.style.display = 'block';
+metadeDireita2.style.display = 'none';
+
+var troca = false;
+
+const botaoCV = document.getElementById('botaoVerCV');
+
+botaoCV.addEventListener('click', function() {
+
+  if (troca == false) {
+    botaoCV.classList.remove('animacaoDeslocamentoSobe');
+    botaoCV.classList.add('animacaoDeslocamentoDesce');
+    setTimeout(function() {
+      metadeDireita1.style.display = 'none';
+      metadeDireita2.style.display = 'block';
+      botaoCV.textContent = "View resume";
+      troca = !troca;
+    }, 1100);
+  }
+  else {
+    botaoCV.classList.remove('animacaoDeslocamentoDesce');
+    botaoCV.classList.add('animacaoDeslocamentoSobe');
+    setTimeout(function() {
+      metadeDireita1.style.display = 'block';
+      metadeDireita2.style.display = 'none';
+      botaoCV.textContent = "View full CV";
+      troca = !troca;
+    }, 1100);
+  }
+
+});

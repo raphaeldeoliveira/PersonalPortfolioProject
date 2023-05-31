@@ -418,3 +418,132 @@ img {
     background-color: hsla(120, 100%, 25%, 0.712);
     transition-duration: 200ms;
 }
+
+#botaoVerCV {
+    background-color: #0c0c0c;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 7px 7px #bbb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botaoVerCV:hover {
+    background-color: #fff;
+    color: #0c0c0c;
+}
+
+#botaoVerResume {
+    background-color: #0c0c0c;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 7px 7px #bbb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botaoVerResume:hover {
+    background-color: #fff;
+    color: #0c0c0c;
+}
+
+#metadeDireita2 {
+    overflow: auto;
+    width: 460px;
+    height: 324px;
+    background-color: #252525;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@keyframes botaoDescendo {
+    0% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.animacaoDeslocamentoDesce {
+    animation: botaoDescendo 1s forwards;
+}
+
+@keyframes botaoSubindo {
+    0% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+
+.animacaoDeslocamentoSobe {
+    animation: botaoSubindo 1s forwards;
+}
+
+#projetos {
+    width: 90%;
+    margin: auto;
+}
+
+.tituloProjetos {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+}
+
+.resumoProjetos {
+
+}
+
+.botaotextoOculto {
+    background-color: #252525;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.flex-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.triangulo {
+    margin-top: 5px;
+    margin-left: 6px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #fff;
+}
+
+.projEsquerda {
+    width: 30%;
+    padding: 10px;
+}
+
+.projDireita {
+    width: 70%;
+    padding: 10px;
+}
+
+.tamanhoImagemProjetos {
+    width: 95%;
+    border-radius: 20px;
+    margin-right: 20px;
+}
