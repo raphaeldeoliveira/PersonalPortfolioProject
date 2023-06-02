@@ -6,3 +6,5 @@
    - quando clicar na opção ele da um .textContent e muda o titulo do botao atual. Além de mudar o texto, que explica o projeto
 
 * criar media querys
+
+* personalizar a barra de scrollagem. Deixar com border-radius e mais "simples", bonita

@@ -189,3 +189,176 @@ botaoCV.addEventListener('click', function() {
   }
 
 });
+
+// MENU PARA VER AS OPÇÕES DO PROJETO DO FIFA
+const comboBox = document.getElementById('comboBox');
+const botaoDoCombo = document.getElementById('botaotextoOculto');
+const textoBotaoOculto = document.getElementById('textoBotaoOculto');
+
+comboBox.style.display = 'none';
+botaoDoCombo.style.display = 'block';
+textoBotaoOculto.style.display = 'block';
+
+botaoDoCombo.addEventListener('click', function() {
+  botaoDoCombo.style.display = 'none';
+  comboBox.style.display = 'block';
+  textoBotaoOculto.style.display = 'none';
+});
+
+// botoes do menu FIFA Project (funcionamento, rentabilidade, aprendizado, porque acabou)
+
+const atualCombo = document.getElementById('textoCombo');
+const botaoFuncionamento = document.getElementById('botaoFuncionamento');
+const botaoRentabilidade = document.getElementById('botaoRentabilidade');
+const botaoAprendizado = document.getElementById('botaoAprendizado');
+const botaoPorqueAcabou = document.getElementById('botaoPorqueAcabou');
+
+botaoFuncionamento.addEventListener('click', function() {
+  textoBotaoOculto.textContent = "igual o rio busca o mar";
+  atualCombo.textContent = "Funcionamento";
+  
+  botaoDoCombo.style.display = 'block';
+  comboBox.style.display = 'none';
+  textoBotaoOculto.style.display = 'block';
+});
+
+botaoRentabilidade.addEventListener('click', function() {
+  textoBotaoOculto.textContent = "voce vem me procurar";
+  atualCombo.textContent = "Rentabilidade";
+  
+  botaoDoCombo.style.display = 'block';
+  comboBox.style.display = 'none';
+  textoBotaoOculto.style.display = 'block';
+});
+
+botaoAprendizado.addEventListener('click', function() {
+  textoBotaoOculto.textContent = "e eu entao eu te dou meu amor, como voce nao quis dar";
+  atualCombo.textContent = "Aprendizado";
+  
+  botaoDoCombo.style.display = 'block';
+  comboBox.style.display = 'none';
+  textoBotaoOculto.style.display = 'block';
+});
+
+botaoPorqueAcabou.addEventListener('click', function() {
+  textoBotaoOculto.textContent = "entao viaja no meu corpo sem medo de ser feliz";
+  atualCombo.textContent = "Porque acabou?";
+  
+  botaoDoCombo.style.display = 'block';
+  comboBox.style.display = 'none';
+  textoBotaoOculto.style.display = 'block';
+});
+
+// menu para ver as opções do projeto de extensão
+const comboBox2 = document.getElementById('comboBox2');
+const botaoDoCombo2 = document.getElementById('botaotextoOculto2');
+const textoBotaoOculto2 = document.getElementById('textoBotaoOculto2');
+
+comboBox2.style.display = 'none';
+botaoDoCombo2.style.display = 'block';
+textoBotaoOculto2.style.display = 'block';
+
+botaoDoCombo2.addEventListener('click', function() {
+  comboBox2.style.display = 'block';
+  botaoDoCombo2.style.display = 'none';
+  textoBotaoOculto2.style.display = 'none';
+});
+
+// botoes do menu ProjetoDeExtensao
+const atualCombo2 = document.getElementById('atualCombo2');
+const botaoFuncionamento2 = document.getElementById('botaoFuncionamento2');
+const botaoAprendizado2 = document.getElementById('botaoAprendizado2');
+
+botaoFuncionamento2.addEventListener('click', function() {
+  textoBotaoOculto2.textContent = "you are here";
+  atualCombo2.textContent = "Funcionamento";
+
+  botaoDoCombo2.style.display = 'block';
+  comboBox2.style.display = 'none';
+  textoBotaoOculto2.style.display = 'block';
+});
+
+botaoAprendizado2.addEventListener('click', function() {
+  textoBotaoOculto2.textContent = "rock you like a hurican";
+  atualCombo2.textContent = "Aprendizado";
+
+  botaoDoCombo2.style.display = 'block';
+  comboBox2.style.display = 'none';
+  textoBotaoOculto2.style.display = 'block';
+});
+
+// menu para ver as opções do Angel Modas
+const comboBox3 = document.getElementById('comboBox3');
+const botaoDoCombo3 = document.getElementById('botaotextoOculto3');
+const textoBotaoOculto3 = document.getElementById('textoBotaoOculto3');
+
+comboBox3.style.display = 'none';
+botaoDoCombo3.style.display = 'block';
+textoBotaoOculto3.style.display = 'block';
+
+botaoDoCombo3.addEventListener('click', function() {
+  comboBox3.style.display = 'block';
+  botaoDoCombo3.style.display = 'none';
+  textoBotaoOculto3.style.display = 'none';
+});
+
+// botoes do menu AngelModas
+const atualCombo3 = document.getElementById('atualCombo3');
+const botaoFuncionamento3 = document.getElementById('botaoFuncionamento3');
+const botaoAprendizado3 = document.getElementById('botaoAprendizado3');
+
+botaoFuncionamento3.addEventListener('click', function() {
+  textoBotaoOculto3.textContent = "eu te daria um lugar no meu peito pra morar";
+  atualCombo3.textContent = "Funcionamento";
+
+  botaoDoCombo3.style.display = 'block';
+  comboBox3.style.display = 'none';
+  textoBotaoOculto3.style.display = 'block';
+});
+
+botaoAprendizado3.addEventListener('click', function() {
+  textoBotaoOculto3.textContent = "pra ser a dona e pra dominar esse cara cheio de paixaaaaaaao";
+  atualCombo3.textContent = "Aprendizado";
+
+  botaoDoCombo3.style.display = 'block';
+  comboBox3.style.display = 'none';
+  textoBotaoOculto3.style.display = 'block';
+});
+
+// menu para ver opções do projeto de redes
+const comboBox4 = document.getElementById('comboBox4');
+const botaoDoCombo4 = document.getElementById('botaotextoOculto4');
+const textoBotaoOculto4 = document.getElementById('textoBotaoOculto4');
+
+comboBox4.style.display = 'none';
+botaoDoCombo4.style.display = 'block';
+textoBotaoOculto4.style.display = 'block';
+
+botaoDoCombo4.addEventListener('click', function() {
+  comboBox4.style.display = 'block';
+  botaoDoCombo4.style.display = 'none';
+  textoBotaoOculto4.style.display = 'none';
+});
+
+// botoes do menu AngelModas
+const atualCombo4 = document.getElementById('atualCombo4');
+const botaoFuncionamento4 = document.getElementById('botaoFuncionamento4');
+const botaoAprendizado4 = document.getElementById('botaoAprendizado4');
+
+botaoFuncionamento4.addEventListener('click', function() {
+  textoBotaoOculto4.textContent = "sitio do pica pau amarelo";
+  atualCombo4.textContent = "Funcionamento";
+
+  botaoDoCombo4.style.display = 'block';
+  comboBox4.style.display = 'none';
+  textoBotaoOculto4.style.display = 'block';
+});
+
+botaoAprendizado4.addEventListener('click', function() {
+  textoBotaoOculto4.textContent = "tonigth, nini in the darkness tonight, tutututututu";
+  atualCombo4.textContent = "Aprendizado";
+
+  botaoDoCombo4.style.display = 'block';
+  comboBox4.style.display = 'none';
+  textoBotaoOculto4.style.display = 'block';
+});
