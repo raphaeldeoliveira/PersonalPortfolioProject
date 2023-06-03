@@ -8,3 +8,9 @@
 * criar media querys
 
 * personalizar a barra de scrollagem. Deixar com border-radius e mais "simples", bonita
+
+trocar o lang="en" toda vez q reicar de idioma
+
+*botar uma secção 'resultado final' nos 3 ultimos
+
+* o copied do email deve ficar responsivo

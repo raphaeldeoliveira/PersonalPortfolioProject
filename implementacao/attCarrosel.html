@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-images {
+  width: 900px; /* Largura total do carrossel (300px x 3 imagens) */
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-images img {
+  width: 300px;
+  height: auto;
+}
+
+.carousel-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background-color: #000;
+}
+
+.dot {
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-images">
+          <img src="../images/projetos/fifaProject2.png" alt="Imagem 1">
+          <img src="../images/projetos/fifaProject3.png" alt="Imagem 2">
+          <img src="../images/projetos/fifaProject4.png" alt="Imagem 3">
+        </div>
+        <div class="carousel-navigation">
+          <button class="carousel-button prev-button">&lt;</button>
+          <button class="carousel-button next-button">&gt;</button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+    <script>
+        // Espera o carregamento do DOM
+document.addEventListener("DOMContentLoaded", function(event) {
+  const carousel = document.querySelector('.carousel');
+  const imagesContainer = document.querySelector('.carousel-images');
+  const images = document.querySelectorAll('.carousel-images img');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const dots = document.querySelectorAll('.dot');
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    imagesContainer.style.transform = `translateX(-${index * 300}px)`;
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function previousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function goToImage(index) {
+    currentIndex = index;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function updateActiveDot() {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  carousel.addEventListener('mouseenter', () => {
+    carousel.classList.add('hover');
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    carousel.classList.remove('hover');
+  });
+
+  prevButton.addEventListener('click', previousImage);
+  nextButton.addEventListener('click', nextImage);
+
+  dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+goToImage(index);
+});
+});
+
+showImage(currentIndex);
+updateActiveDot();
+});
+
+    </script>
+      
+</body>
+</html>

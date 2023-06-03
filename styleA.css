@@ -216,18 +216,18 @@ ul {
     border-radius: 5px;
 }
 
-#text-css {
+#text-java {
     padding: 4px;
-    background-color: #379ad6;
-    color: white;
+    background-color: #F2F2F2;
+    color: #F20505;
     font-weight: bold;
     border-radius: 5px;
 }
 
-#text-html {
+#text-vue {
     padding: 4px;
-    background-color: #e44d25;
-    color: white;
+    background-color: #012E40;
+    color: #00BD82;
     font-weight: bold;
     border-radius: 5px;
 }
