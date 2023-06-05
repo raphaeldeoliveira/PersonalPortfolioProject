@@ -164,12 +164,14 @@ metadeDireita2.style.display = 'none';
 var troca = false;
 
 const botaoCV = document.getElementById('botaoVerCV');
+const fotoPrincipal = document.getElementById('fotoPrincipal');
 
 botaoCV.addEventListener('click', function() {
 
   if (troca == false) {
     botaoCV.classList.remove('animacaoDeslocamentoSobe');
     botaoCV.classList.add('animacaoDeslocamentoDesce');
+    fotoPrincipal.src = "images/foto-minha-estudando.jpeg";
     setTimeout(function() {
       metadeDireita1.style.display = 'none';
       metadeDireita2.style.display = 'block';
@@ -180,6 +182,7 @@ botaoCV.addEventListener('click', function() {
   else {
     botaoCV.classList.remove('animacaoDeslocamentoDesce');
     botaoCV.classList.add('animacaoDeslocamentoSobe');
+    fotoPrincipal.src = "images/foto-minha.jpeg";
     setTimeout(function() {
       metadeDireita1.style.display = 'block';
       metadeDireita2.style.display = 'none';
@@ -362,3 +365,12 @@ botaoAprendizado4.addEventListener('click', function() {
   comboBox4.style.display = 'none';
   textoBotaoOculto4.style.display = 'block';
 });
+
+// ir para secção interna
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}

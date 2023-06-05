@@ -466,6 +466,7 @@ img {
     background-color: #252525;
     border-radius: 20px;
     padding: 20px;
+    line-height: 1.4;
 }
 
 @keyframes botaoDescendo {
@@ -657,6 +658,41 @@ img {
 
 .linkTitulo:hover {
     text-decoration: underline;
+}
+
+/* estilos do CV */
+#dadosPessoais {
+    text-align: center;
+}
+
+.titulo1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.margem1 {
+    margin-top: 10px;
+}
+
+.margem2 {
+    margin-top: 10px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.alinharDireita {
+    margin-left: auto;
 }
 
 /* estilizando a ScrollBar */

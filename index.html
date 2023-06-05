@@ -30,17 +30,12 @@
             </div>
         </div>
     </div>
-    <!-- fim header -->
 
-    <!-- main1 apresentacao -->
     <div>
-        <!-- foto minha com texto embaixo "that's me!" e logo ao lado um texto sobre o que curso, minhas habilidades (linguagens, frmaworks) - as linguagens e frameworks devem ficar em destaque com uma box com cor dde fundo e letra em cor de destaque com base na cor da linguagem
-        
-        bota um text-shadow a baixo das letras do meu nome-->
 
         <div class="flex-row">
             <div class="metade-pagina">
-                <img class="fotoPessoal" src="images/foto-minha.jpeg" alt="">
+                <img  id="fotoPrincipal" class="fotoPessoal" src="images/foto-minha.jpeg" alt="">
                 <p id="subtitulo-foto">That's Me!</p>
             </div>
             <div class="metade-pagina">
@@ -54,26 +49,51 @@
                     <span id="texto-main-after">But studying to become a great programmer. I have so much interesse in tech and search upgrade my skills day by day.</span></p>
                 </div>
                 <div id="metadeDireita2">
-                    <div>
-                        <span>Brazilian, singer, 22 years old</span>
+                    <div id="dadosPessoais">
+                        <span>Brazilian, single, 22 years old, Lages SC</span> <br>
+                        <span>(47) 98447-0822 - rafaolive3003@gmail.com</span>
                     </div>
-                    <div>
-                        <span>**Objetivo**</span>
-                        <span>** Entrar em meu primeiro emprego como desenvolvedor **</span>
+
+                    <div class="margem1">
+                        <span class="titulo1">EDUCAÇÃO</span>
+                        <br>
+                        <hr>
+                        <div class="flex-row">
+                            <span class="bold">INSTITUTO FEDERAL DE SANTA CATARINA</span>
+                            <span class="alinharDireita">Lages, SC</span>
+                        </div>
+                        <div class="flex-row">
+                            <span class="bold italico">Bacharelado em ciência da computação</span>
+                            <span class="italico alinharDireita">2022 - present</span>
+                        </div>
+                        <span>Atualmente estou no 3° período. Estou focando em aprimorar minhas habilidades em programação front-end e back-end. Para as próximas fases pretendo me concentrar em redes neurais e ciência de dados</span>
                     </div>
-                    <div>
-                        <span>Perfil</span>
-                        <span>**Possuo conhecimento em desenvolvimento de Aplicações WEB. <br>
-                        Possou facilidade em aprender e sempre estou procurando me <br>
-                        manter atualizado por estudar tecnologias que estão em alta no <br>
-                        mercado. Estou habituado a trabalhar em equipe e, sempre que <br>
-                        possível, procuro tentar ajudar as pessoas em minha vol</span>
+
+                    <div class="margem1">
+                        <span class="titulo1">EXPERIÊNCIA</span>
+                        <hr>
+                        <span>No momento, ainda não tenho experiência profissional como desenvolvedor. Porém tenho alguns projetos pessoais que podem ser acessados no meu site ou github.</span>
+                        <br><br>
+                        <div class="flex-row">
+                            <span class="bold">PROJETO DE EXTENSÃO, IFSC</span>
+                            <span class="alinharDireita">Lages, SC</span>
+                        </div>
+                        <div class="flex-row">
+                            <span class="bold italico">Desenvolvedor Front-end</span>
+                            <span class="italico alinharDireita">1 jul - 30 dez, 2022</span>
+                        </div>
+                        <span>Desenvolvi todos os componentes visuais do site incluindo estudo de design, fontes e cores. Além de desenvolver toda a parte de interação com o usuário usando Vue.js</span>
                     </div>
-                    <div>
-                        <span>Formação</span>
-                        <ul>
-                            <li>Ciencia da computação - 2021, present</li>
-                        </ul>
+
+
+                    <div class="margem1">
+                        <span class="titulo1">INFORMAÇÕES ADICIONAIS</span>
+                        <hr>
+                        <span class="bold">Habilidades: </span>
+                        <span>Conhecimento médio Javascript, Vue.js e Java; Já dominando orientação a objetos e criação de sistemas com interface gráfica.</span>
+                        <br>
+                        <span class="bold">Idiomas: </span>
+                        <span>Português fluente e inglês intermediário.</span>
                     </div>
                 </div>
                 <div id="botaoVerCV">View full CV</div>
@@ -86,7 +106,7 @@
 
     <!-- main2 projetos -->
     <div id="main">
-        <div class="card flex-row" onclick="window.open('https://www.seusite.com', '_blank')">
+        <div class="card flex-row div-clique" onclick="scrollToSection('projetoFifa')">
             <div class="card-left">
                 <h3 id="project1">FIFA Bot Project</h3>
                 <p id="textProject1">This project i make with a friend 'onde' we evelopment a system for gain coins in FIFA game for PS4. This project 'durou' 'por cerca de' 7 months. We create a script for make a repetitible sequence and when have a 'quebra' in flow the programme have API's 'que interferiam' in flow and 'corrigiam as quebras'. </p>
@@ -101,7 +121,7 @@
             </div>
         </div>
         
-        <div class="card flex-row" onclick="window.open('https://www.seusite.com', '_blank')">
+        <div class="card flex-row div-clique" onclick="scrollToSection('projetoDeExtensao')">
             <div class="card-left">
                 <h3 id="project2">Programming teaching platform</h3>
                 <p id="textProject2">This is a extension project of university which i went a front-end devolpment, building all css components and build interactivites with Vue</p>
@@ -115,7 +135,7 @@
             </div>
         </div>
         
-        <div class="card flex-row" onclick="window.open('https://alfatour.netlify.app/', '_blank')">
+        <div class="card flex-row div-clique" onclick="scrollToSection('angelModas')">
             <div class="card-left">
                 <h3 id="project3">Angel Modas</h3>
                 <p id="textProject3">This is a stock management system project created for my girlfriend store. I make with she features. The 'ideia' is take a control of the products sold, 'quais ela quer tira para ela, lucro, etc. Junto do projeto eu ajudei na construção da peça a qual será feita a loja e usado o sistema.' </p>
@@ -129,7 +149,7 @@
             </div>
         </div>
         
-        <div class="card flex-row" onclick="window.open('https://to-do-list11111.netlify.app/', '_blank')">
+        <div class="card flex-row div-clique" onclick="scrollToSection('projetoRedes')">
             <div class="card-left">
                 <h3 id="project4">To-do List</h3>
                 <p id="textProject4">A classic project of an developer... I have some shame of this, but i use them daily for organize my routine and its my first projecot, so..</p>
@@ -226,7 +246,7 @@
                 </div>
                 <div class="projDireita">
                     <div>
-                        <img class="tamanhoImagemProjetos" src="images/projetos/projetoWilson.png" alt="">
+                        <img class="tamanhoImagemProjetos" src="images/angelModasProject/angelModas3.jpeg" alt="">
                     </div>
                 </div>
             </div>
