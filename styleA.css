@@ -686,13 +686,10 @@ img {
     margin-top: 10px;
 }
 
-hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .alinharDireita {
     margin-left: auto;
 }
+
+/* estilizando o carossel */
 
 /* estilizando a ScrollBar */
