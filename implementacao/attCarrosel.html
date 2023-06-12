@@ -7,19 +7,19 @@
     <title>Document</title>
     <style>
         .carousel {
-  width: 300px;
+  width: 900px;
   overflow: hidden;
   position: relative;
 }
 
 .carousel-images {
-  width: 900px; /* Largura total do carrossel (300px x 3 imagens) */
+  width: 2700px; /* Largura total do carrossel (300px x 3 imagens) */
   display: flex;
   transition: transform 0.3s ease-in-out;
 }
 
 .carousel-images img {
-  width: 300px;
+  width: 900px;
   height: auto;
 }
 
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let currentIndex = 0;
 
   function showImage(index) {
-    imagesContainer.style.transform = `translateX(-${index * 300}px)`;
+    imagesContainer.style.transform = `translateX(-${index * 900}px)`;
   }
 
   function nextImage() {

@@ -374,3 +374,108 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: "smooth" });
   }
 }
+
+// codigo do carrosel implementado no primeiro projeto
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const carousel = document.querySelector('.carousel');
+  const imagesContainer = document.querySelector('.carousel-images');
+  const images = document.querySelectorAll('.carousel-images img');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const dots = document.querySelectorAll('.dot');
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    imagesContainer.style.transform = `translateX(-${index * 800}px)`;
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function previousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function goToImage(index) {
+    currentIndex = index;
+    showImage(currentIndex);
+    updateActiveDot();
+  }
+
+  function updateActiveDot() {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  carousel.addEventListener('mouseenter', () => {
+    carousel.classList.add('hover');
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    carousel.classList.remove('hover');
+  });
+
+  prevButton.addEventListener('click', previousImage);
+  nextButton.addEventListener('click', nextImage);
+
+  dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+goToImage(index);
+});
+});
+
+showImage(currentIndex);
+updateActiveDot();
+});
+
+// faz o carosel dos 4 projetos
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const carousel2 = document.querySelector('.carousel2');
+  const divContainer = document.querySelector('.carousel-divs');
+  const div = document.querySelectorAll('.carousel-divs > div');
+  const prevButton2 = document.querySelector('.prev-button2');
+  const nextButton2 = document.querySelector('.next-button2');
+
+  let currentIndex2 = 0;
+
+  function showImage2(index) {
+    divContainer.style.transform = `translateY(-${index * 600}px)`;
+  }
+
+  function nextImage2() {
+    currentIndex2 = (currentIndex2 + 1) % div.length;
+    showImage2(currentIndex2);
+  }
+
+  function previousImage2() {
+    currentIndex2 = (currentIndex2 - 1 + div.length) % div.length;
+    showImage2(currentIndex2);
+  }
+
+  /*function goToImage2(index) {
+    currentIndex2 = index;
+    showImage2(currentIndex2);
+  }*/
+
+  carousel2.addEventListener('mouseenter', () => {
+    carousel2.classList.add('hover');
+  });
+
+  carousel2.addEventListener('mouseleave', () => {
+    carousel2.classList.remove('hover');
+  });
+
+  prevButton2.addEventListener('click', previousImage2);
+  nextButton2.addEventListener('click', nextImage2);
+
+  showImage2(currentIndex2);
+});

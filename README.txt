@@ -14,3 +14,5 @@ trocar o lang="en" toda vez q reicar de idioma
 *botar uma secção 'resultado final' nos 3 ultimos
 
 * o copied do email deve ficar responsivo
+
+* ajustar os tamanhos da div que scrola, mudar o nome  do projeto quando clica no botao de subir ou descer

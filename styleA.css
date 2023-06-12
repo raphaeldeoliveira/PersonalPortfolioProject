@@ -692,4 +692,113 @@ img {
 
 /* estilizando o carossel */
 
+.carousel {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-images {
+    width: 2400px; /* Largura total do carrossel (300px x 3 imagens) */
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 800px;
+    height: 414px;
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /*.carousel-button*/
+  .carousel-button-prev, .carousel-button-next {
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .carousel-button-prev {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .carousel-button-next {
+border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .carousel-button-prev:hover {
+    color: hsla(120, 100%, 25%, 0.712);
+    transition-duration: 200ms;
+  }
+
+  .carousel-button-next:hover {
+    color: hsla(120, 100%, 25%, 0.712);
+    transition-duration: 200ms;
+  }
+
+  .carousel-button:hover {
+    background-color: hsla(120, 100%, 25%, 0.712);
+    transition-duration: 200ms;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #121212;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .carousel-dots .dot.active {
+    background-color: rgb(163, 169, 163);
+  }
+  
+  .dot {
+    border: 1px solid white;
+  }
+
+  .botoesTrocaImagem {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .carousel2 {
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-divs {
+    height: 2400px;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .prev-button2, .next-button2 {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
 /* estilizando a ScrollBar */
