@@ -1,18 +1,15 @@
-* mudar o CV e criar a secção do CV
+* PERSONALIZAR A BARRA DE SCROLLAGEM
+   - Deixar um border-radius mais harmonico
+   - Deixar mais minimalista
+   - Design mais bonito
 
-* criar o equivalente ao comboBox para os itens do projeto (botao que abre pequena janela)
-   - criar uma div com as opções e deixar como display: none
-   - quando clicar ali na primeira opção ele atribui a classe da animção e da display: block no menu de opções
-   - quando clicar na opção ele da um .textContent e muda o titulo do botao atual. Além de mudar o texto, que explica o projeto
+* CRIAR TEXTOS CORRETOR PARA OS PROJETOS E TUDO QUE ENVOLVE TEXTOS (DEIXAR PRONTO TANTO EM PORTUGUES QUANTO INGLLES)
+   - O curriculo deve estar escrito da forma final e a tradução tambem
+   - botar uma secção 'resultado final' nos 3 ultimos
 
-* criar media querys
+* MUDANÇA DE IDIOMA
+   - trocar o lang="en" toda vez q troca de idioma. Muda de 'pt-BR' para 'EN'
+   - As mudanças de texto na troca de idiomas não estão mais funcionando por conta de ter deletado componentes e criado novos. Substituir para os novos (quando tiver tudo pronto) ~ lembrar de deixar sempre uma variavel vazia no final se não buga
 
-* personalizar a barra de scrollagem. Deixar com border-radius e mais "simples", bonita
-
-trocar o lang="en" toda vez q reicar de idioma
-
-*botar uma secção 'resultado final' nos 3 ultimos
-
-* o copied do email deve ficar responsivo
-
-* ajustar os tamanhos da div que scrola, mudar o nome  do projeto quando clica no botao de subir ou descer
+* CRIAR MEDIA QUERYS
+   - O 'copiado' / 'copied' do email deve ficar responsivo. Se clicar ele com a barra de scrolagem mais em cima ele não fica em cima. Tem que verificar em que ponto ta a barra e fazer um calculo para mudar a margem em que o pop-up vai aparecer

@@ -328,53 +328,6 @@ botaoAprendizado3.addEventListener('click', function() {
   textoBotaoOculto3.style.display = 'block';
 });
 
-// menu para ver opções do projeto de redes
-const comboBox4 = document.getElementById('comboBox4');
-const botaoDoCombo4 = document.getElementById('botaotextoOculto4');
-const textoBotaoOculto4 = document.getElementById('textoBotaoOculto4');
-
-comboBox4.style.display = 'none';
-botaoDoCombo4.style.display = 'block';
-textoBotaoOculto4.style.display = 'block';
-
-botaoDoCombo4.addEventListener('click', function() {
-  comboBox4.style.display = 'block';
-  botaoDoCombo4.style.display = 'none';
-  textoBotaoOculto4.style.display = 'none';
-});
-
-// botoes do menu AngelModas
-const atualCombo4 = document.getElementById('atualCombo4');
-const botaoFuncionamento4 = document.getElementById('botaoFuncionamento4');
-const botaoAprendizado4 = document.getElementById('botaoAprendizado4');
-
-botaoFuncionamento4.addEventListener('click', function() {
-  textoBotaoOculto4.textContent = "sitio do pica pau amarelo";
-  atualCombo4.textContent = "Funcionamento";
-
-  botaoDoCombo4.style.display = 'block';
-  comboBox4.style.display = 'none';
-  textoBotaoOculto4.style.display = 'block';
-});
-
-botaoAprendizado4.addEventListener('click', function() {
-  textoBotaoOculto4.textContent = "tonigth, nini in the darkness tonight, tutututututu";
-  atualCombo4.textContent = "Aprendizado";
-
-  botaoDoCombo4.style.display = 'block';
-  comboBox4.style.display = 'none';
-  textoBotaoOculto4.style.display = 'block';
-});
-
-// ir para secção interna
-
-function scrollToSection(sectionId) {
-  var section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
 // codigo do carrosel implementado no primeiro projeto
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -436,35 +389,45 @@ showImage(currentIndex);
 updateActiveDot();
 });
 
-// faz o carosel dos 4 projetos
+// codigo do carrosel implementado no segundo projeto
 
 document.addEventListener("DOMContentLoaded", function(event) {
   const carousel2 = document.querySelector('.carousel2');
-  const divContainer = document.querySelector('.carousel-divs');
-  const div = document.querySelectorAll('.carousel-divs > div');
+  const imagesContainer2 = document.querySelector('.carousel-images2');
+  const images2 = document.querySelectorAll('.carousel-images2 img');
   const prevButton2 = document.querySelector('.prev-button2');
   const nextButton2 = document.querySelector('.next-button2');
+  const dots2 = document.querySelectorAll('.dot2');
 
   let currentIndex2 = 0;
 
   function showImage2(index) {
-    divContainer.style.transform = `translateY(-${index * 600}px)`;
+    imagesContainer2.style.transform = `translateX(-${index * 800}px)`;
   }
 
   function nextImage2() {
-    currentIndex2 = (currentIndex2 + 1) % div.length;
+    currentIndex2 = (currentIndex2 + 1) % images2.length;
     showImage2(currentIndex2);
+    updateActiveDot2();
   }
 
   function previousImage2() {
-    currentIndex2 = (currentIndex2 - 1 + div.length) % div.length;
+    currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
     showImage2(currentIndex2);
+    updateActiveDot2();
   }
 
-  /*function goToImage2(index) {
+  function goToImage2(index) {
     currentIndex2 = index;
     showImage2(currentIndex2);
-  }*/
+    updateActiveDot2();
+  }
+
+  function updateActiveDot2() {
+    dots2.forEach((dot2, index) => {
+      dot2.classList.toggle('active', index === currentIndex2);
+    });
+  }
 
   carousel2.addEventListener('mouseenter', () => {
     carousel2.classList.add('hover');
@@ -477,5 +440,195 @@ document.addEventListener("DOMContentLoaded", function(event) {
   prevButton2.addEventListener('click', previousImage2);
   nextButton2.addEventListener('click', nextImage2);
 
-  showImage2(currentIndex2);
+  dots2.forEach((dot2, index) => {
+dot2.addEventListener('click', () => {
+goToImage2(index);
+});
+});
+
+showImage2(currentIndex2);
+updateActiveDot2();
+});
+
+// codigo do carrosel implementado no terceiro projeto
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const carousel3 = document.querySelector('.carousel3');
+  const imagesContainer3 = document.querySelector('.carousel-images3');
+  const images3 = document.querySelectorAll('.carousel-images3 img');
+  const prevButton3 = document.querySelector('.prev-button3');
+  const nextButton3 = document.querySelector('.next-button3');
+  const dots3 = document.querySelectorAll('.dot3');
+
+  let currentIndex3 = 0;
+
+  function showImage3(index) {
+    imagesContainer3.style.transform = `translateX(-${index * 800}px)`;
+  }
+
+  function nextImage3() {
+    currentIndex3 = (currentIndex3 + 1) % images3.length;
+    showImage3(currentIndex3);
+    updateActiveDot3();
+  }
+
+  function previousImage3() {
+    currentIndex3 = (currentIndex3 - 1 + images3.length) % images3.length;
+    showImage3(currentIndex3);
+    updateActiveDot3();
+  }
+
+  function goToImage3(index) {
+    currentIndex3 = index;
+    showImage3(currentIndex3);
+    updateActiveDot3();
+  }
+
+  function updateActiveDot3() {
+    dots3.forEach((dot3, index) => {
+      dot3.classList.toggle('active', index === currentIndex3);
+    });
+  }
+
+  carousel3.addEventListener('mouseenter', () => {
+    carousel3.classList.add('hover');
+  });
+
+  carousel3.addEventListener('mouseleave', () => {
+    carousel3.classList.remove('hover');
+  });
+
+  prevButton3.addEventListener('click', previousImage3);
+  nextButton3.addEventListener('click', nextImage3);
+
+  dots3.forEach((dot3, index) => {
+dot3.addEventListener('click', () => {
+goToImage3(index);
+});
+});
+
+showImage3(currentIndex3);
+updateActiveDot3();
+});
+
+// faz o carosel dos 4 projetos
+
+// funcao para mudar o titulo dos projetos
+
+const tituloProjetos = document.getElementById('tituloProjetos');
+
+function transicaoTitulo(indexAtual) {
+  tituloProjetos.classList.add('transicaoTituloProjeto');
+
+  setTimeout(function() {
+    
+    switch (indexAtual) {
+      case 0:
+        tituloProjetos.textContent = 'FIFA Bot Project';
+        break;
+      case 1:
+        tituloProjetos.textContent = 'Programming teaching platform';
+        break;
+      case 2:
+        tituloProjetos.textContent = 'Angel Modas';
+        break;
+    }
+
+  }, 500);
+
+  setTimeout(function() {
+    
+    tituloProjetos.classList.remove('transicaoTituloProjeto');
+
+  }, 1000);
+}
+
+// carrosel dos 4 projetos
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const carousel2 = document.querySelector('.carouselProjetos');
+  const divContainer = document.querySelector('.carousel-divs');
+  const div = document.querySelectorAll('.carousel-divs > div');
+  const prevButton2 = document.querySelector('.prev-button0');
+  const nextButton2 = document.querySelector('.next-button0');
+
+  let indexAtual = 0;
+
+  function showImage2(index) {
+    divContainer.style.transform = `translateY(-${index * 550}px)`;
+  }
+
+  function nextImage2() {
+    indexAtual = (indexAtual + 1) % div.length;
+    showImage2(indexAtual);
+    transicaoTitulo(indexAtual);
+  }
+
+  function previousImage2() {
+    indexAtual = (indexAtual - 1 + div.length) % div.length;
+    showImage2(indexAtual);
+    transicaoTitulo(indexAtual);
+  }
+
+  carousel2.addEventListener('mouseenter', () => {
+    carousel2.classList.add('hover');
+  });
+
+  carousel2.addEventListener('mouseleave', () => {
+    carousel2.classList.remove('hover');
+  });
+
+  prevButton2.addEventListener('click', previousImage2);
+  nextButton2.addEventListener('click', nextImage2);
+
+  showImage2(indexAtual);
+
+  const cardAngelModas = document.getElementById('cardAngelModas');
+  const cardProjetoExtensao = document.getElementById('cardProjetoExtensao');
+  const cardFifaBotProject = document.getElementById('cardFifaBotProject');
+
+  function scrolar() {
+
+    var section = document.getElementById('tituloProjetos');
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+  
+  cardFifaBotProject.addEventListener('click', function() {
+    scrolar();
+
+    setTimeout(function() {
+      if (indexAtual == 1) {
+        previousImage2();
+      }
+      else if (indexAtual == 2) {
+        nextImage2();
+      }
+    }, 440);
+  });
+
+  cardProjetoExtensao.addEventListener('click', function() {
+    scrolar();
+
+    setTimeout(function() {
+      if (indexAtual == 0) {
+        nextImage2();
+      }
+      else if (indexAtual == 2) {
+        previousImage2();
+      }
+    }, 440);
+  });
+
+  cardAngelModas.addEventListener('click', function() {
+    scrolar();
+
+    setTimeout(function() {
+      if (indexAtual == 0) {
+        previousImage2();
+      }
+      else if (indexAtual == 1) {
+        nextImage2();
+      }
+    }, 440);
+  });
 });

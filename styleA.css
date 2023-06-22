@@ -43,6 +43,15 @@ body {
     padding: 50px;
 }
 
+#cardLeetcode {
+    background-color: white;
+    color: black;
+}
+
+#cardLeetcode > div > h3 {
+    font-size: 1.4rem;
+}
+
 .card {
     cursor: pointer;
     background-color: #252525;
@@ -221,6 +230,14 @@ ul {
     background-color: #F2F2F2;
     color: #F20505;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+#text-spring {
+    padding: 4px;
+    font-weight: bold;
+    background-color: #6FB440;
+    color: white;
     border-radius: 5px;
 }
 
@@ -500,10 +517,45 @@ img {
     margin: auto;
 }
 
-.tituloProjetos {
+#tituloProjetos {
     font-size: 2.8rem;
     font-weight: bold;
     text-shadow: 5px 5px black;
+}
+
+@keyframes transicaoTituloProjeto {
+    0% {
+
+    }
+
+    50% {
+        color: #0c0c0c;
+        text-shadow: none;
+    }
+
+    100% {
+        color: white;
+        text-shadow: 5px 5px black;
+    }
+}
+
+@keyframes transicaoTituloProjeto2 {
+    0% {
+        color: white;
+        text-shadow: 5px 5px black;
+    }
+
+    100% {
+        
+    }
+}
+
+.transicaoTituloProjeto {
+    animation: transicaoTituloProjeto 1s ease-in-out;
+}
+
+.transicaoTituloProjeto2 {
+    animation: transicaoTituloProjeto2 1s ease-in-out;
 }
 
 .resumoProjetos {
@@ -690,7 +742,7 @@ img {
     margin-left: auto;
 }
 
-/* estilizando o carossel */
+/* estilizando o carossel de imagens do primeiro projeto */
 
 .carousel {
     width: 800px;
@@ -732,7 +784,7 @@ img {
   }
 
   .carousel-button-next {
-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
 
@@ -768,7 +820,7 @@ border-top-right-radius: 10px;
   }
   
   .carousel-dots .dot.active {
-    background-color: rgb(163, 169, 163);
+    background-color: hsla(120, 100%, 25%);
   }
   
   .dot {
@@ -780,7 +832,7 @@ border-top-right-radius: 10px;
     flex-direction: row;
   }
 
-  .carousel2 {
+  .carouselProjetos {
     height: 540px;
     overflow: hidden;
     position: relative;
@@ -791,7 +843,7 @@ border-top-right-radius: 10px;
     transition: transform 0.8s ease-in-out;
   }
 
-  .prev-button2, .next-button2 {
+  .prev-button0, .next-button0 {
     display: block;
     font-size: 22px;
     margin-bottom: 3px;
@@ -799,6 +851,94 @@ border-top-right-radius: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     cursor: pointer;
+  }
+
+  .next-button0:hover, .prev-button0:hover {
+    color: hsla(120, 100%, 25%);
+  }
+
+/* Carousel do projeto2 */
+
+.carousel2 {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-images2 {
+    width: 2400px; /* Largura total do carrossel (300px x 3 imagens) */
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .carousel-images2 img {
+    width: 800px;
+    height: 414px;
+  }
+
+  .carousel-button:hover {
+    background-color: hsla(120, 100%, 25%, 0.712);
+    transition-duration: 200ms;
+  }
+  
+  .carousel-dots .dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #121212;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .carousel-dots .dot2.active {
+    background-color: hsla(120, 100%, 25%);
+  }
+  
+  .dot2 {
+    border: 1px solid white;
+  }
+
+/* Carousel do projeto3 */
+
+.carousel3 {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-images3 {
+    width: 2400px; /* Largura total do carrossel (300px x 3 imagens) */
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .carousel-images3 img {
+    width: 800px;
+    height: 414px;
+  }
+/*
+  .carousel-button:hover {
+    background-color: hsla(120, 100%, 25%, 0.712);
+    transition-duration: 200ms;
+  }*/
+  
+  .carousel-dots .dot3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #121212;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .carousel-dots .dot3.active {
+    background-color: hsla(120, 100%, 25%);
+  }
+  
+  .dot3 {
+    border: 1px solid white;
   }
 
 /* estilizando a ScrollBar */

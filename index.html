@@ -44,7 +44,7 @@
                     <p id="texto-main"><span id="texto-main-before">I'm a student of computer cience on Instituto Federal de Santa Catarina. Focused on becoming a fullstack developer. My actual skills is: Html, Css, </span>
                         <span id="text-javascript">Javascript</span> , 
                         <span id="text-vue">Vue</span> <span id="texto-main-and">and</span> 
-                        <span id="text-java">Java</span>. 
+                        <span id="text-java">Java</span> whit <span id="text-spring">Spring Boot</span>. 
                     <span id="texto-main-after">But studying to become a great programmer. I have so much interesse in tech and search upgrade my skills day by day.</span></p>
                 </div>
                 <div id="metadeDireita2">
@@ -104,7 +104,7 @@
 
     <!-- main2 projetos -->
     <div id="main">
-        <div class="card flex-row div-clique" onclick="scrollToSection('projetoFifa')">
+        <div id="cardFifaBotProject" class="card flex-row div-clique">
             <div class="card-left">
                 <h3 id="project1">FIFA Bot Project</h3>
                 <p id="textProject1">This project i make with a friend 'onde' we evelopment a system for gain coins in FIFA game for PS4. This project 'durou' 'por cerca de' 7 months. We create a script for make a repetitible sequence and when have a 'quebra' in flow the programme have API's 'que interferiam' in flow and 'corrigiam as quebras'. </p>
@@ -119,7 +119,7 @@
             </div>
         </div>
         
-        <div class="card flex-row div-clique" onclick="scrollToSection('projetoDeExtensao')">
+        <div id="cardProjetoExtensao" class="card flex-row div-clique">
             <div class="card-left">
                 <h3 id="project2">Programming teaching platform</h3>
                 <p id="textProject2">This is a extension project of university which i went a front-end devolpment, building all css components and build interactivites with Vue</p>
@@ -133,7 +133,7 @@
             </div>
         </div>
         
-        <div class="card flex-row div-clique" onclick="scrollToSection('angelModas')">
+        <div id="cardAngelModas" class="card flex-row div-clique">
             <div class="card-left">
                 <h3 id="project3">Angel Modas</h3>
                 <p id="textProject3">This is a stock management system project created for my girlfriend store. I make with she features. The 'ideia' is take a control of the products sold, 'quais ela quer tira para ela, lucro, etc. Junto do projeto eu ajudei na construção da peça a qual será feita a loja e usado o sistema.' </p>
@@ -147,29 +147,26 @@
             </div>
         </div>
         
-        <div class="card flex-row div-clique" onclick="scrollToSection('projetoRedes')">
+        <a href="https://leetcode.com/raphaeloc/" target="_blank" id="cardLeetcode" class="card flex-row">
             <div class="card-left">
-                <h3 id="project4">To-do List</h3>
-                <p id="textProject4">A classic project of an developer... I have some shame of this, but i use them daily for organize my routine and its my first projecot, so..</p>
+                <h3 id="project4">My leetcode profile</h3>
+                <p id="textProject4">This is for proof my knologment of programming logical. All the problemens are solving in java langueage.</p>
             </div>
-            <div class="card-right slideshow">
-                <a class="prev" onclick="event.stopPropagation()">&#10094;</a>
-                <img class="active" src="images/projetos/todoList1.png" alt="">
-                <img src="images/projetos/todoList2.png" alt="">
-                <a class="next" onclick="event.stopPropagation()">&#10095;</a>
+            <div class="card-right">
+                <img src="images/leetcode5.png" alt="">
             </div>
-        </div>
+        </a>
     </div>
 
-    <div class="flex-row">
-        <span class="tituloProjetos">FIFA Bot Project</span>
-        <div>
-            <a class="prev-button2 botaoCimaBaixo">&#9650;</a>
-            <a class="next-button2 botaoCimaBaixo">&#9660;</a>
+    <div style="margin-left: 60px;" class="flex-row">
+        <div style="margin-right: 12px;">
+            <a class="prev-button0">&#9650;</a>
+            <a class="next-button0">&#9660;</a>
         </div>
+        <span id="tituloProjetos">FIFA Bot Project</span>
     </div>
 
-    <div id="projetos" class="carousel2">
+    <div id="projetos" class="carouselProjetos">
         <div class="carousel-divs">
 
             <div id="projetoFifa" class="divCarousel">
@@ -215,7 +212,6 @@
             </div>
 
             <div id="projetoDeExtensao" class="divCarousel margemCima">
-                <a class="tituloProjetos linkTitulo" href="" target="_blank">Programming Teaching Platform</a>
                 <div class="resumoProjetos">
                     <span>Sentir o que Jesus sentia, sorrir como Jesus sorria e ao chegar do fim do dia seu que dormiria muiti mais feliiiiiiiiiz</span>
                 </div>
@@ -235,15 +231,30 @@
                         </div>
                     </div>
                     <div class="projDireita">
+                        <div class="carousel2">
+                            <div class="carousel-images2">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (118).png" alt="">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (211).png" alt="">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (171).png" alt="">
+                            </div>
+                            <div class="carousel-dots">
+                                <a class="carousel-button-prev prev-button2">&lt;</a>
+                                <span class="dot2"></span>
+                                <span class="dot2"></span>
+                                <span class="dot2"></span>
+                                <a class="carousel-button-next next-button2">&gt;</a>
+                            </div>
+                        </div>
+                        <!--
                         <div>
                             <img class="tamanhoImagemProjetos" src="images/projetos/projetoWilson.png" alt="">
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
     
             <div id="angelModas" class="divCarousel margemCima">
-                <a class="tituloProjetos linkTitulo" href="https://github.com/raphaeldeoliveira/LojaRoupaApp" target="_blank">Angel Modas</a>
                 <div class="resumoProjetos">
                     <span>Sentir o que Jesus sentia, sorrir como Jesus sorria e ao chegar do fim do dia seu que dormiria muiti mais feliiiiiiiiiz</span>
                 </div>
@@ -263,37 +274,25 @@
                         </div>
                     </div>
                     <div class="projDireita">
+                        <div class="carousel3">
+                            <div class="carousel-images3">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (118).png" alt="">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (211).png" alt="">
+                                <img class="tamanhoImagemProjetos" src="images/fifaProject/Captura de Tela (171).png" alt="">
+                            </div>
+                            <div class="carousel-dots">
+                                <a class="carousel-button-prev prev-button3">&lt;</a>
+                                <span class="dot3"></span>
+                                <span class="dot3"></span>
+                                <span class="dot3"></span>
+                                <a class="carousel-button-next next-button3">&gt;</a>
+                            </div>
+                        </div>
+                        <!--
                         <div>
                             <img class="tamanhoImagemProjetos" src="images/angelModasProject/angelModas3.jpeg" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="projetoRedes" class="divCarouselmargemCima">
-                <a class="tituloProjetos linkTitulo" href="https://github.com/raphaeldeoliveira/ProjetoDeRedes" target="_blank">Project of Computer Networking</a>
-                <div class="resumoProjetos">
-                    <span>I make this project in the 3rd phase of the course (computer cience). In this project i need create three project with the 'protocolos de comunicação' UDP and TCP: 'um de comunicação em multicast, um de gestão de arquivos via servidor e o ultimo para gerir o estado de aparelhos eletronicos (controle de luz) de uma empresa.</span>
-                </div>
-                <div class="flex-row">
-                    <div class="projEsquerda">
-                        <div id="botaotextoOculto4" class="textoOculto">
-                            <div class="flex-row2">
-                                <span id="atualCombo4">Funcionamento</span>
-                                <div class="triangulo"></div>
-                            </div>
-                        </div>
-                        <div id="textoBotaoOculto4" class="botaoOculto">O projeto era baseado em python, quickMacro e ... . E funcionava com o quickmacro rodando os comandos em ordem e o python entrava para intervir caso a linha sucessória de comandos fosse "quebrada". Ele analisava a tela, quando verificava uma quebra por parametros de imagem o arquivo python era executado e voltava atras e corrigia a sequencia</div>
-                        <div id="comboBox4" class="combo">
-                            <div id="botaoFuncionamento4" class="itemCombo">Funcionamento</div>
-                            <hr>
-                            <div id="botaoAprendizado4" class="itemCombo">Aprendizado</div>
-                        </div>
-                    </div>
-                    <div class="projDireita">
-                        <div>
-                            <img class="tamanhoImagemProjetos" src="images/projetos/projetoWilson.png" alt="">
-                        </div>
+                        -->
                     </div>
                 </div>
             </div>
