@@ -195,6 +195,16 @@ ul {
     flex-direction: row;
 }
 
+.seccaoEImagem {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuInicio {
+    display: flex;
+    flex-direction: row;
+}
+
 #fotoPrincipal {
     width: 23.75rem;
     border-radius: 50%;
@@ -1105,7 +1115,20 @@ img {
 
 /* Site para mobile */
 
-
+  @media (max-width: 720px) {
+    html {
+        font-size: 60%;
+    }
+    .menuInicio {
+        flex-direction: column;
+    }
+    #main {
+        justify-content: start;
+    }
+    .seccaoEImagem {
+        flex-direction: column;
+    }
+  }
 
 
 
