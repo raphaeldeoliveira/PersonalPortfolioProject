@@ -165,7 +165,8 @@ toggleBtn.addEventListener("click", function () {
     presentationTextBefore.textContent = "Sou um estudante de ciência da computação no Instituto Federal de Santa Catarina. Focado em me tornar um desenvolvedor fullstack. Minhas principais habilidades são: Html, Css, ";
     presentatioinAnd.textContent = "e";
     presentationWith.textContent = "com";
-    presentationTextAfter.textContent = "Mas estudando para me tornar um grande programador.";
+    presentationTextAfter.textContent = "Mas estudando para me tornar um grande programador. " + "\u00A0".repeat(62);
+
     textPhoto.textContent = "Esse sou eu!";
 
     if (botaoCV.textContent == "View full CV") {
@@ -626,6 +627,49 @@ botaoAprendizado3.addEventListener('click', function() {
 
 // codigo do carrosel implementado no primeiro projeto
 
+function verificarTamanhoProjeto() {
+  tamanhoJanelaAtual = window.innerWidth;
+  
+  if (tamanhoJanelaAtual > 1100) {
+    return 559;
+  } else if (tamanhoJanelaAtual <= 1100 && tamanhoJanelaAtual > 1020) {
+    return 453.68;
+  } else if (tamanhoJanelaAtual <= 940 && tamanhoJanelaAtual > 860) {
+    return 379.4;
+  } else if (tamanhoJanelaAtual <= 780 && tamanhoJanelaAtual > 700) {
+    return 305.1;
+  }
+}
+
+var tamanhoJanelaAtual;
+
+function verificarTamanhoRotacaoImagem() {
+  tamanhoJanelaAtual = window.innerWidth;
+
+  if (tamanhoJanelaAtual > 1240) {
+    return 800;
+  } else if (tamanhoJanelaAtual <= 1240 && tamanhoJanelaAtual > 1180) {
+    return 765;
+  } else if (tamanhoJanelaAtual <= 1180 && tamanhoJanelaAtual > 1100) {
+    return 715;
+  } else if (tamanhoJanelaAtual <= 1100 && tamanhoJanelaAtual > 1020) {
+    return 665;
+  } else if (tamanhoJanelaAtual <= 1020 && tamanhoJanelaAtual > 940) {
+    return 615;
+  } else if (tamanhoJanelaAtual <= 940 && tamanhoJanelaAtual > 860) {
+    return 565;
+  } else if (tamanhoJanelaAtual <= 860 && tamanhoJanelaAtual > 780) {
+    return 515;
+  } else if (tamanhoJanelaAtual <= 780 && tamanhoJanelaAtual > 700) {
+    return 465;
+  } else if (tamanhoJanelaAtual <= 700 && tamanhoJanelaAtual > 620) {
+    return 415;
+  } else if (tamanhoJanelaAtual <= 620) {
+    return 365;
+  }
+}
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
   const carousel = document.querySelector('.carousel');
   const imagesContainer = document.querySelector('.carousel-images');
@@ -637,16 +681,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let currentIndex = 0;
 
   function showImage(index) {
-    imagesContainer.style.transform = `translateX(-${index * 800}px)`;
+    imagesContainer.style.transform = `translateX(-${verificarTamanhoRotacaoImagem() * index}px)`;
+
+    //imagesContainer.style.transform = `translateX(-${index * 765}px)`;
+    //imagesContainer.style.transform = `translateX(-${index * 50}rem)`;
   }
 
   function nextImage() {
+    tamanhoJanelaAtual = window.innerWidth;
+    
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
     updateActiveDot();
   }
 
   function previousImage() {
+    tamanhoJanelaAtual = window.innerWidth;
+    alert(tamanhoJanelaAtual);
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
     updateActiveDot();
@@ -698,7 +749,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let currentIndex2 = 0;
 
   function showImage2(index) {
-    imagesContainer2.style.transform = `translateX(-${index * 800}px)`;
+    imagesContainer2.style.transform = `translateX(-${verificarTamanhoRotacaoImagem() * index}px)`;
+    //imagesContainer2.style.transform = `translateX(-${index * 800}px)`;
+    //imagesContainer2.style.transform = `translateX(-${index * 50}rem)`;
   }
 
   function nextImage2() {
@@ -759,7 +812,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let currentIndex3 = 0;
 
   function showImage3(index) {
-    imagesContainer3.style.transform = `translateX(-${index * 800}px)`;
+    imagesContainer3.style.transform = `translateX(-${verificarTamanhoRotacaoImagem() * index}px)`;
+    //imagesContainer3.style.transform = `translateX(-${index * 800}px)`;
+    //imagesContainer3.style.transform = `translateX(-${index * 50}rem)`;
   }
 
   function nextImage3() {
@@ -851,7 +906,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let indexAtual = 0;
 
   function showImage2(index) {
-    divContainer.style.transform = `translateY(-${index * 559}px)`;
+    //divContainer.style.transform = `translateY(-${index * 559}px)`;
+    //divContainer.style.transform = `translateY(-${index * 34.9375}rem)`;
+    divContainer.style.transform = `translateY(-${verificarTamanhoProjeto() * index}px)`;
   }
 
   function nextImage2() {
