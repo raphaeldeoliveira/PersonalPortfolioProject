@@ -781,7 +781,7 @@ img {
   }
   
   .carousel-images {
-    width: 2400px; /* Largura total do carrossel (300px x 3 imagens) */
+    width: 400px; /* Largura total do carrossel (300px x 3 imagens) */
     display: flex;
     transition: transform 0.8s ease-in-out;
   }
