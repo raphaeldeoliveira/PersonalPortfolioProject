@@ -1006,9 +1006,9 @@ img {
 
   @media (max-width: 1160px) {
     
-    html {
+    /*html {
         font-size: 90%;
-    }
+    }*/
 
   }
 
@@ -1113,7 +1113,7 @@ img {
 
 /* neste vai reduzir o height*/
 
-/* Site para mobile */
+/* Site para mobile 
 
   @media (max-width: 720px) {
     html {
@@ -1130,6 +1130,7 @@ img {
     }
   }
 
+*/
 
 
 

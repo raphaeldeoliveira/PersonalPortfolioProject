@@ -647,7 +647,7 @@ function verificarTamanhoRotacaoImagem() {
   tamanhoJanelaAtual = window.innerWidth;
 
   if (tamanhoJanelaAtual > 1240) {
-    return 800;
+    return 790;
   } else if (tamanhoJanelaAtual <= 1240 && tamanhoJanelaAtual > 1180) {
     return 765;
   } else if (tamanhoJanelaAtual <= 1180 && tamanhoJanelaAtual > 1100) {
