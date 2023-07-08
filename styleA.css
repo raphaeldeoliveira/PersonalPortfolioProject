@@ -1209,6 +1209,12 @@ img {
 
 }
 
+@media (max-width: 384px) {
+    body {
+        background-color: red;
+    }
+}
+
 /* de 1360x768 pra cima */
 
 
