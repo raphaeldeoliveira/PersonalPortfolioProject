@@ -505,8 +505,9 @@ img {
 
 #metadeDireita2 {
     overflow: auto;
-    width: 460px;
-    height: 324px;
+    /*width: 28.75rem;*/
+    width: 90%;
+    height: 20.25rem;
     background-color: #252525;
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
@@ -884,6 +885,11 @@ img {
     cursor: pointer;
   }
 
+  .textoMeuNome {
+    display: flex;
+    flex-direction: column;
+  }
+
   .next-button0:hover, .prev-button0:hover {
     color: hsla(120, 100%, 25%);
   }
@@ -1113,11 +1119,11 @@ img {
 
 /* neste vai reduzir o height*/
 
-/* Site para mobile 
+/* Site para mobile */
 
   @media (max-width: 720px) {
     html {
-        font-size: 60%;
+        font-size: 90%;
     }
     .menuInicio {
         flex-direction: column;
@@ -1128,9 +1134,55 @@ img {
     .seccaoEImagem {
         flex-direction: column;
     }
+
+    #fotoPrincipal {
+        width: 28rem;
+        margin-left: 5rem;
+    }
+    .metade-pagina {
+        width: 85%;
+        margin-left: 5rem;
+        margin-top: 3.125rem;
+    }
+    #subtitulo-foto {
+        margin-top: 0.9rem;
+        margin-left: 12.8rem;
+        font-size: 2.8rem;
+        display: inline-block;
+    }
+
+    #espaco {
+        margin-left: 18px;
+    }
+    .sobrenome {
+        margin-left: 10px;
+    }
+    .textoMaior {
+        font-size: 4rem;
+    }
+
+    .textoMeuNome {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        width: 42rem;
+        height: 13.125rem;
+        margin-left: 18px;
+    }
+    .card-right {
+        
+    }
+    .next {
+        left: 12.5rem;
+    }
+    .card-left {
+        width: 80%;
+    }
+    
   }
 
-*/
+
 
 
 
