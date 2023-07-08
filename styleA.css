@@ -200,6 +200,11 @@ ul {
     flex-direction: row;
 }
 
+.flex-row4 {
+    display: flex;
+    flex-direction: row;
+}
+
 .seccaoEImagem {
     display: flex;
     flex-direction: row;
@@ -1240,6 +1245,16 @@ img {
 
     .metade-pagina {
         margin-left: -2rem;
+    }
+
+
+
+    #name-log2 {
+        display: none;
+    }
+
+    .flex-row4 {
+        margin-left: -30px;
     }
 }
 
