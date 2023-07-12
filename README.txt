@@ -14,3 +14,5 @@
 1240 -> 800px
 
 * no mobile, quando clica no contact ele nao vai ate em baixo para sublinhar as redes sociais
+
+* da maneira que esta, todos os projetos principais tem que ter o mesmo numero de fotos para ter o mesmo numero de dots e o alinhamento ser igual (margin-left)

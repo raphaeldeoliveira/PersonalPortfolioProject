@@ -638,6 +638,10 @@ function verificarTamanhoProjeto() {
     return 379.4;
   } else if (tamanhoJanelaAtual <= 780 && tamanhoJanelaAtual > 700) {
     return 305.1;
+  } 
+  // max-width: 384px -> celular, tem que fazer o restante
+  else {
+    return 609;
   }
 }
 
@@ -665,7 +669,8 @@ function verificarTamanhoRotacaoImagem() {
   } else if (tamanhoJanelaAtual <= 700 && tamanhoJanelaAtual > 620) {
     return 415;
   } else if (tamanhoJanelaAtual <= 620) {
-    return 365;
+    //return 365;
+    return 346;
   }
 }
 
