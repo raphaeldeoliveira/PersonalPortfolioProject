@@ -12,3 +12,5 @@
 * Filtrar fotos melhores para o FIFABOT
 
 1240 -> 800px
+
+* no mobile, quando clica no contact ele nao vai ate em baixo para sublinhar as redes sociais

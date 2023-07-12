@@ -205,6 +205,12 @@ ul {
     flex-direction: row;
 }
 
+.flex-row5 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
 .seccaoEImagem {
     display: flex;
     flex-direction: row;
@@ -222,6 +228,12 @@ ul {
 }
 
 .metade-pagina {
+    width: 40%;
+    margin-left: 5rem;
+    margin-top: 3.125rem;
+}
+
+.metade-pagina2 {
     width: 40%;
     margin-left: 5rem;
     margin-top: 3.125rem;
@@ -1154,6 +1166,11 @@ img {
         margin-left: 5rem;
         margin-top: 3.125rem;
     }
+    .metade-pagina2 {
+        width: 85%;
+        margin-left: 5rem;
+        margin-top: 3.125rem;
+    }
     #subtitulo-foto {
         margin-top: 0.9rem;
         margin-left: 12.8rem;
@@ -1161,12 +1178,6 @@ img {
         display: inline-block;
     }
 
-    #espaco {
-        margin-left: 18px;
-    }
-    .sobrenome {
-        margin-left: 10px;
-    }
     .textoMaior {
         font-size: 4rem;
     }
@@ -1244,17 +1255,62 @@ img {
     }
 
     .metade-pagina {
+        margin-left: 2.5rem;
+    }
+
+    .metade-pagina2 {
         margin-left: -2rem;
     }
 
-
-
+    #espaco {
+        margin-left: 45px;
+    }
+    .nome {
+        margin-left: -39px;
+    }
+    .sobrenome {
+        margin-left: 10px;
+    }
+    .textoMaior {
+        font-size: 4rem;
+    }
+    .textoMeuNome {
+        display: flex;
+        flex-direction: row;
+    }
+    .textoMeuNome {
+        flex-direction: column;
+        margin-left: 40px;
+    }
     #name-log2 {
         display: none;
     }
 
     .flex-row4 {
         margin-left: -30px;
+    }
+
+    .card {
+        margin-left: 2px;
+    }
+    .card-left {
+        width: 50%;
+    }
+    img {
+        margin-left: 20px;
+    }
+    .prev {
+        left: 20px;
+    }
+    .next {
+        left: 132px;
+    }
+
+    .flex-row5 {
+        margin-left: 15px;
+    }
+    #tituloProjetos {
+        font-size: 3.5rem;
     }
 }
 
