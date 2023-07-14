@@ -991,3 +991,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, 440);
   });
 });
+
+const linkDirecional = document.getElementById('tituloProjetos');
+
+function direcionarSiteCorreto() {
+  if (linkDirecional.textContent == "FIFA Bot Project") {
+    window.open("https://github.com/raphaeldeoliveira/FIFABOT", "_blank");
+  }
+  else if (linkDirecional.textContent == "Programming teaching platform") {
+    window.open("https://github.com/raphaeldeoliveira/PlataformaEnsino", "_blank");
+  }
+  else if (linkDirecional.textContent == "Angel Modas") {
+    window.open("https://github.com/raphaeldeoliveira/LojaRoupaApp", "_blank");
+  }
+}
+
+linkDirecional.onclick = direcionarSiteCorreto;
