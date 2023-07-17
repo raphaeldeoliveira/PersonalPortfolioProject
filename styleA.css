@@ -1362,9 +1362,13 @@ img {
     }
 }
 
+@media (max-width: 280px) {
+    body {
+        background-color: red;
+    }
+}
+
 /* de 1360x768 pra cima */
-
-
   
 /* 480px // Extra small screen
 *  768px // Small screen
